@@ -1,0 +1,333 @@
+//Sass variables + inheritance properties
+$baby-green: hsl(162, 21%, 88%);
+$dusty-baby-green: hsl(162, 21%, 88%, 0.9);
+$dark-green: #13775A;
+$pink: rgb(239, 186, 178);
+$dark-grey: #3D383B;
+$light-grey: rgb(109, 107, 108);
+$sky-blue: #417DBB;
+$sand: rgb(235, 225, 223);
+$dark-sand: rgb(133, 126, 125);
+$joined: 'Dancing Script', cursive;
+$normal:'Quicksand', sans-serif;
+
+%text{
+    font-family: $normal;
+    font-size: 16px;
+    font-weight: bolder;
+}
+%main-box{
+    background-color: $sand;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        
+}
+%swap-box{
+    background-color:$dusty-baby-green;
+    padding: 6%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 
+    6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 3%;
+    margin-bottom: 50px;
+    border-radius: 4px;  
+} 
+
+//navbar
+.navbar{
+    top: 1rem;
+    left: 0;
+    height: 50px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+    ul{
+        float: right;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        }  
+    li{
+        list-style: none; 
+        }  
+    .active{
+        background-color:$pink;
+        color: $dark-sand;
+        }
+    a{
+        height: 40px;
+        color: $light-grey;
+        font-weight: bold;
+        font-size: 18px; 
+        padding: 5px 10px;
+        text-transform: uppercase;
+        background-color: $sand;
+        display: block;
+        margin: 3px;
+        border-radius: 2px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    a:hover{
+        color : $dark-grey;
+    }
+}
+
+//grid on home page 
+.home{
+    @extend %main-box;    
+
+    .heading{
+        text-align: center;
+        font-weight: bold;
+        font-family: $joined;
+        font-size: 100px;
+        color:$dark-grey;      
+    }
+    .above{
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        font-style: italic;
+    }  
+}
+
+//intro at top of page grid 
+.intro{
+    @extend %main-box;     
+    .heading{
+        text-align: center;
+        font-weight: bold;
+        font-family: $joined;
+        font-size: 50px;
+        color:$dark-grey;      
+    }  
+    .below{
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        font-style: italic;
+    }
+}
+
+//grid with swap info 
+.info-box{
+    background: rgba(0,0,0,0.40); 
+    width: 100%;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: $dark-grey;
+    padding: 5%; 
+}
+.rounded-circle{
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.swap-head{
+    text-align: center;
+    color:$sand;
+    padding: 1%;
+    font-weight: bold;
+}
+.swap-box-plastic{    
+    @extend %swap-box;
+    height: 305px;
+    a{
+        color:$dark-grey;
+        font-weight:bolder;
+    }
+    a:hover{
+        color:$light-grey;
+    }
+}
+.swap-box-beauty{    
+    @extend %swap-box;
+    height: 620px;
+    a{
+        color:$dark-grey;
+        font-weight:bolder;
+    }
+    a:hover{
+        color:$light-grey;
+    }
+}
+.swap-box-fashion{    
+    @extend %swap-box;
+    a{
+        color:$dark-grey;
+        font-weight:bolder;
+    }
+    a:hover{
+        color:$light-grey;
+    }
+}
+
+//responsive elements 
+@media (max-width: 765px){
+        .resp-height{
+            height: auto;
+        }
+        .auto{
+            height: auto;
+        }
+        .home-resp1{
+            margin: 80px 0px 0px 0px;
+        }
+        .home{
+            padding: 10%;
+            margin-bottom: 30%;
+        }
+        .block-resp1{
+            margin: 80px 0px 10% 0px;
+        }
+        .block{
+            padding: 10% 10% 0% 10%;
+            margin-bottom: 30%;
+        }      
+}
+@media (min-width: 766px){
+    .resp-height{
+        height: 450px;
+    }
+    .resp2{
+        height: 620px;
+    }
+    .home-resp1{
+        margin: 80px 0px 0px 0px;
+    }
+    .home{
+        padding:5%;
+        margin-bottom: 20%;
+    }
+    .block-resp1{
+        margin: 80px 0px 1% 0px;
+    }
+    .block{
+        padding:5% 5% 0% 5%;
+        margin-bottom: 20%;
+    }   
+}
+@media (min-width: 900px){
+    .resp-height{
+        height: 380px;
+    }
+    .home-resp1{
+        margin: 120px 0px 0px 0px;
+    }
+    .home{
+        padding:5%;
+        margin-bottom: 10%;
+    }
+    .block-resp1{
+        margin: 120px 0px 10% 0px;
+    }
+    .block{
+        padding:5% 5% 0% 5%;
+        margin-bottom: 20%;
+    } 
+}
+@media (min-width: 1000px){
+    .resp-height{
+        height: 380px;
+    }
+    .resp2{
+        height: 500px;
+    }
+    .home-resp1{
+        margin: 120px 0px 0px 0px;  
+    }
+    .home{
+        padding:3% 10% 3% 15%;
+        margin-bottom: 10%;
+    }
+    .block-resp1{
+        margin: 120px 0px 10% 0px;  
+    }
+    .block{
+        padding:3% 10% 3% 15%;
+        margin-bottom: 10%;
+    }   
+}
+@media (min-width: 1200px){
+    .resp-height{
+        height: 450px;
+    }
+    .resp2{
+        height: 620px;
+    }
+    .home-resp1{
+        margin: 120px 0px 0px 0px;
+    }
+    .home{
+        padding:3% 10% 3% 15%;
+        margin-bottom: 10%;
+    }
+    .block-resp1{
+        margin: 120px 0px 10% 0px;   
+    }
+    .block{
+        padding:3% 10% 0% 15%;
+        margin-bottom: 10%;
+    }
+}
+
+//general 
+html body{
+    margin: 0px;
+}
+main { 
+    background: url("https://www.rd.com/wp-content/uploads/2017/12/02_Greece_Gorgeous-Pink-Sand-Beaches-You-Need-to-Visit_446333773_Zakhar-Mar-760x506.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative; 
+    margin: 0%;
+  }
+footer{
+    @extend %text;
+    color: white;
+    background-color: $pink;
+    text-align: center;
+    padding-top: 20px;
+    height: 70px;
+    width: 100%;
+    bottom:0;
+    a{
+        color:$light-grey;
+    }
+    a:hover{
+        color:$dark-grey;
+    }      
+  }   
+  ul{
+    padding: left 8% right 8%;
+  }
+
+//table 
+th{
+    background-color: $light-grey;
+    color: $sand;
+    max-width: 200px;
+    padding: 2%;
+    height: 100px;
+}
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+}
+td{
+    padding: 1%;
+    background-color: rgb(239, 186, 178, 0.8);
+    border: 2px solid rgba(235, 225, 223, 0.8);
+}
+
+
+

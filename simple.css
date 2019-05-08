@@ -1,0 +1,331 @@
+footer {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.intro, .home {
+  background-color: #ebe1df;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.swap-box-fashion, .swap-box-beauty, .swap-box-plastic {
+  background-color: rgba(218, 231, 227, 0.9);
+  padding: 6%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 3%;
+  margin-bottom: 50px;
+  border-radius: 4px;
+}
+
+.navbar {
+  top: 1rem;
+  left: 0;
+  height: 50px;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.navbar ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar .active {
+  background-color: #efbab2;
+  color: #857e7d;
+}
+.navbar a {
+  height: 40px;
+  color: #6d6b6c;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  background-color: #ebe1df;
+  display: block;
+  margin: 3px;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navbar a:hover {
+  color: #3D383B;
+}
+
+.home .heading {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  color: #3D383B;
+}
+.home .above {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.intro .heading {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  color: #3D383B;
+}
+.intro .below {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.info-box {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #3D383B;
+  padding: 5%;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.swap-head {
+  text-align: center;
+  color: #ebe1df;
+  padding: 1%;
+  font-weight: bold;
+}
+
+.swap-box-plastic {
+  height: 305px;
+}
+.swap-box-plastic a {
+  color: #3D383B;
+  font-weight: bolder;
+}
+.swap-box-plastic a:hover {
+  color: #6d6b6c;
+}
+
+.swap-box-beauty {
+  height: 620px;
+}
+.swap-box-beauty a {
+  color: #3D383B;
+  font-weight: bolder;
+}
+.swap-box-beauty a:hover {
+  color: #6d6b6c;
+}
+
+.swap-box-fashion a {
+  color: #3D383B;
+  font-weight: bolder;
+}
+.swap-box-fashion a:hover {
+  color: #6d6b6c;
+}
+
+@media (max-width: 765px) {
+  .resp-height {
+    height: auto;
+  }
+
+  .auto {
+    height: auto;
+  }
+
+  .home-resp1 {
+    margin: 80px 0px 0px 0px;
+  }
+
+  .home {
+    padding: 10%;
+    margin-bottom: 30%;
+  }
+
+  .block-resp1 {
+    margin: 80px 0px 10% 0px;
+  }
+
+  .block {
+    padding: 10% 10% 0% 10%;
+    margin-bottom: 30%;
+  }
+}
+@media (min-width: 766px) {
+  .resp-height {
+    height: 450px;
+  }
+
+  .resp2 {
+    height: 620px;
+  }
+
+  .home-resp1 {
+    margin: 80px 0px 0px 0px;
+  }
+
+  .home {
+    padding: 5%;
+    margin-bottom: 20%;
+  }
+
+  .block-resp1 {
+    margin: 80px 0px 1% 0px;
+  }
+
+  .block {
+    padding: 5% 5% 0% 5%;
+    margin-bottom: 20%;
+  }
+}
+@media (min-width: 900px) {
+  .resp-height {
+    height: 380px;
+  }
+
+  .home-resp1 {
+    margin: 120px 0px 0px 0px;
+  }
+
+  .home {
+    padding: 5%;
+    margin-bottom: 10%;
+  }
+
+  .block-resp1 {
+    margin: 120px 0px 10% 0px;
+  }
+
+  .block {
+    padding: 5% 5% 0% 5%;
+    margin-bottom: 20%;
+  }
+}
+@media (min-width: 1000px) {
+  .resp-height {
+    height: 380px;
+  }
+
+  .resp2 {
+    height: 500px;
+  }
+
+  .home-resp1 {
+    margin: 120px 0px 0px 0px;
+  }
+
+  .home {
+    padding: 3% 10% 3% 15%;
+    margin-bottom: 10%;
+  }
+
+  .block-resp1 {
+    margin: 120px 0px 10% 0px;
+  }
+
+  .block {
+    padding: 3% 10% 3% 15%;
+    margin-bottom: 10%;
+  }
+}
+@media (min-width: 1200px) {
+  .resp-height {
+    height: 450px;
+  }
+
+  .resp2 {
+    height: 620px;
+  }
+
+  .home-resp1 {
+    margin: 120px 0px 0px 0px;
+  }
+
+  .home {
+    padding: 3% 10% 3% 15%;
+    margin-bottom: 10%;
+  }
+
+  .block-resp1 {
+    margin: 120px 0px 10% 0px;
+  }
+
+  .block {
+    padding: 3% 10% 0% 15%;
+    margin-bottom: 10%;
+  }
+}
+html body {
+  margin: 0px;
+}
+
+main {
+  background: url("https://www.rd.com/wp-content/uploads/2017/12/02_Greece_Gorgeous-Pink-Sand-Beaches-You-Need-to-Visit_446333773_Zakhar-Mar-760x506.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  margin: 0%;
+}
+
+footer {
+  color: white;
+  background-color: #efbab2;
+  text-align: center;
+  padding-top: 20px;
+  height: 70px;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  color: #6d6b6c;
+}
+footer a:hover {
+  color: #3D383B;
+}
+
+ul {
+  padding: left 8% right 8%;
+}
+
+th {
+  background-color: #6d6b6c;
+  color: #ebe1df;
+  max-width: 200px;
+  padding: 2%;
+  height: 100px;
+}
+
+table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+td {
+  padding: 1%;
+  background-color: rgba(239, 186, 178, 0.8);
+  border: 2px solid rgba(235, 225, 223, 0.8);
+}
+
+/*# sourceMappingURL=simple.css.map */
